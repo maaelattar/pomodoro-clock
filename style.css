@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font: 18px arial, sans-serif;
+  background: #fafafa;
+  color: #D32F2F;
+}
+
+div#container {
+  width: 800px;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+}
+
+div#pomodore_clock {
+  width: 700px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  box-shadow: 0px 0px 2px 2px #7cb342;
+}
+
+div#sessions_titles {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+div#session_settings {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  transition: visibility .6s, opacity .6s;
+}
+
+div#session_settings button {
+  height: 50px;
+  width: 50px;
+}
+
+div#buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+div#buttons>button {
+  height: 50px;
+  width: 100px;
+}
+
+div#developer a {
+  text-decoration: none;
+  color: #7cb342;
+}
+
+.visibility {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.row {
+  height: 35px;
+}
+
+.double_row {
+  height: 100px;
+}
+
+button {
+  border: none;
+  border-radius: 3px;
+  background: transparent;
+  box-shadow: 0px 0px 2px 2px #7cb342, 2px 2px 2px 2px #7cb342;
+  outline: none;
+}
+
+button:hover {
+  box-shadow: 0px 0px 2px 2px #7cb342 inset;
+}
+
+span.session_minutes {
+  font-size: 22px;
+  margin: 0 4px 0 4px;
+}
