@@ -1,0 +1,48 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pomodore Clock</title>
+</head>
+
+<body>
+  <div id="container">
+    <div id="pomodore_clock">
+      <h1 class="row" id="headline">Pomodore Clock</h1>
+      <h3 class="row" id="current_session">Work Session</h3>
+      <h2 class="row" id="clock">25:00</h2>
+      <div class="double_row" id="sessions_titles">
+        <span class="session_title">Work Session</span>
+        <span class="session_title">Break Session</span>
+      </div>
+      <div class="double_row" id="session_settings">
+
+        <div id="work_settings">
+          <button class="settings_button" id="subtract_work_minutes">-</button>
+          <span id="work_minutes" class="session_minutes">25:00</span>
+          <button class="settings_button" id="add_work_minutes">+</button>
+        </div>
+
+
+        <div id="break_settings">
+          <button class="settings_button" id="subtract_break_minutes">-</button>
+          <span id="break_minutes" class="session_minutes">05:00</span>
+          <button class="settings_button" id="add_break_minutes">+</button>
+        </div>
+
+      </div>
+      <div class="double_row" id="buttons">
+        <button id="stop_button">Stop</button>
+        <button id="play_button">Play</button>
+        <button id="reset_button">Reset</button>
+      </div>
+    </div>
+    <div id="developer">
+      Developed by <a href="https://github.com/mohamed-elattar">Mohamed Abdelnaby Elattar</a>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
